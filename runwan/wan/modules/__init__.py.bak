@@ -1,0 +1,8 @@
+import os
+
+# 根据环境变量选择实现
+use_flashinfer_sparse = os.environ.get(USE_FLASHINFER_SPARSE, 0) == 1
+use_flashinfer = os.environ.get(USE_FLASHINFER, 0) == 1
+
+if use_flashinfer_sparse:
+    print([INFO]
